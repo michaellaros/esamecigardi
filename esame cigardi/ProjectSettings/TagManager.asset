@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - bersaglio1
+  - bersaglio2
+  - bersaglio3
+  - bersaglio4
+  - spawner
   layers:
   - Default
   - TransparentFX
