@@ -9,6 +9,9 @@ TagManager:
   - bersaglio3
   - bersaglio4
   - spawner
+  - M
+  - G
+  - T
   layers:
   - Default
   - TransparentFX
