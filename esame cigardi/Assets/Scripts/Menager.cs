@@ -7,6 +7,7 @@ public class Menager : MonoBehaviour
     public static Menager Instance;
 
     public string PlayerName;
+    public int Score;
 
     void Awake ()   
        {
