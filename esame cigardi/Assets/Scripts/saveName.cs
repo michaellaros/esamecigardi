@@ -11,16 +11,16 @@ public class saveName : MonoBehaviour
     void Start()
     {
         OutputTx.text = "Please insert your name";
-        if (PlayerPrefs.GetInt("Named") == 1)
+        if(PlayerPrefs.GetInt("Named") == 1)
         {
-            inputField.SetActive(false);
+            gameObject.SetActive(false);
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     public void SavePlayerName()
