@@ -8,14 +8,13 @@ using UnityEngine.Events;
 public class GetScore : MonoBehaviour
 {
     public UnityEvent action;
+    public Text ScoreTx;
     private string TriggerTag;
     private int ScoreP;
     private int Point;
-    public Text ScoreTx;
     private int PointTosse = 10;
     private int PointManiSporche = 15;
     private int PointFebbre = 0;
-
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +23,7 @@ public class GetScore : MonoBehaviour
         ScoreTx.text = "-" + ScoreP + "-";
         Point = PointTosse;
         TriggerTag = "Tosse";
+        Menager.Instance.Score = ScoreP;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -57,5 +57,10 @@ public class GetScore : MonoBehaviour
     {
         ScoreP = ScoreP + Point;
         ScoreTx.text = "-" + ScoreP + "-";
+    }
+
+    public void GAMEOVER()
+    {
+        Menager.Instance.Score = ScoreP;
     }
 }
