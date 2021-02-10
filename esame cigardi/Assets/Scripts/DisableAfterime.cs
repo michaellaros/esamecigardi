@@ -9,7 +9,7 @@ public class DisableAfterime : MonoBehaviour
     void OnEnable()
     {
         Enable = true;
-        timer = 1f;
+        timer = 0.1f;
     }
     // Start is called before the first frame update
     void Start()
