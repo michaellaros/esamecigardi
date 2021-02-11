@@ -7,7 +7,7 @@ public class PostScore : MonoBehaviour
 {
     public static PostScore Singleton;
 
-    public string DreamloLink = "http://dreamlo.com/lb/fHjfJawM_UmbWvrVgIXTIQ79NktK8u6Uqy0XDglmnphg";
+    private string DreamloLink = "http://dreamlo.com/lb/fHjfJawM_UmbWvrVgIXTIQ79NktK8u6Uqy0XDglmnphg";
     // http://dreamlo.com/lb/fHjfJawM_UmbWvrVgIXTIQ79NktK8u6Uqy0XDglmnphg "my dreamlo"
     public string PlayerName;
     public int Score;
