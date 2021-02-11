@@ -17,9 +17,6 @@ public class PostScore : MonoBehaviour
 
     void Awake ()   
        {
-        setPlayerScore();
-        setPlayerName();
-        PostNewScore(PlayerName, Score);
 
         if (Singleton == null)
         {
@@ -38,21 +35,16 @@ public class PostScore : MonoBehaviour
         Singleton = this;
     }
 
-    public void setPlayerName()
-    {
-        PlayerName = Menager.Instance.PlayerName;
-    }
-
-    public void setPlayerScore()
+    public void setPlayerNameEndScore()
     {
         Score = Menager.Instance.Score;
+        PlayerName = Menager.Instance.PlayerName;
+        PostNewScore();
     }
 
-    public void PostNewScore(string playerName, int score)
+    public void PostNewScore()
     {      
-        StartCoroutine(PostScoreEnumerator(playerName, score));
-        PlayerName = playerName;
-        Score = score;
+        StartCoroutine(PostScoreEnumerator(PlayerName, Score));
     }
 
     IEnumerator PostScoreEnumerator(string playerName, int score)

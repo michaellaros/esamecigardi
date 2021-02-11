@@ -7,6 +7,14 @@ public class ChangeScene : MonoBehaviour
 {
     public string ScenesName;
 
+    void Start()
+    {
+        if(PostScore.Singleton != null)
+        {
+            PostScore.Singleton.ScoreBoardUpdatedEvent.AddListener(changeScene);
+        }
+    }
+
     public void changeScene()
     {
         SceneManager.LoadScene(ScenesName);

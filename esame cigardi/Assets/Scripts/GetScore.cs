@@ -62,5 +62,6 @@ public class GetScore : MonoBehaviour
     public void GAMEOVER()
     {
         Menager.Instance.Score = ScoreP;
+        PostScore.Singleton.Invoke("setPlayerNameEndScore",0f);
     }
 }
