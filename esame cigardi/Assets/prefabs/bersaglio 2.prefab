@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -4191409304635987496}
   m_Layer: 0
   m_Name: bersaglio 2
-  m_TagString: Untagged
+  m_TagString: Passante
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125,4 +125,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 509dc1ccbbdf6f041a9d7a1d314f27c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  temperature: 0
+  temperature: 2

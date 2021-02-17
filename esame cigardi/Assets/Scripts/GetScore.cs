@@ -8,7 +8,9 @@ using UnityEngine.Events;
 public class GetScore : MonoBehaviour
 {
     public UnityEvent action;
+    public UnityEvent eventMisuration;
     public Text ScoreTx;
+    public Text TemperatureTx;
     private string TriggerTag;
     private int ScoreP;
     private int Point;
@@ -28,12 +30,23 @@ public class GetScore : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag(TriggerTag))
+        if (gameObject.tag =="T")
+        {
+            if (other.gameObject.CompareTag("Febbre"))
+            {
+               TemperatureTx.text = "c`" + other.gameObject.GetComponent<Fever>().temperature ; 
+            }
+            else if(other.gameObject.CompareTag("Passante"))
+            {
+                TemperatureTx.text = "c`" + other.gameObject.GetComponent<Fever>().temperature ; 
+            }
+            if (eventMisuration != null)eventMisuration.Invoke();  
+        }
+        else if (other.gameObject.CompareTag(TriggerTag))
         {
             if (action != null)action.Invoke();  
             GetScorePoint(); 
         }
-        
     }
 
     public void ChangeWeapon(string Enemy)

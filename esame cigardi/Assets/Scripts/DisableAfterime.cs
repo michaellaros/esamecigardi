@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class DisableAfterime : MonoBehaviour
 {
+    public float timeDuration = 0.1f;
     private float timer;
     private bool Enable;
     void OnEnable()
     {
         Enable = true;
-        timer = 0.1f;
+        timer = timeDuration;
     }
     // Start is called before the first frame update
     void Start()
