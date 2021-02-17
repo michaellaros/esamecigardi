@@ -461,6 +461,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44068dd5dc574514297e6d5405bb201d, type: 3}
+--- !u!114 &1088174446 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5962703612777992914, guid: 21dacd177d1ddd5458a5ca17f261ba8d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1991816853}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df0f01c0f7330f144ac723c7f75c3c2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1413273982
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,6 +782,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5962703612777992913, guid: 21dacd177d1ddd5458a5ca17f261ba8d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1745038607}
+    - target: {fileID: 5962703612777992913, guid: 21dacd177d1ddd5458a5ca17f261ba8d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1088174446}
+    - target: {fileID: 5962703612777992913, guid: 21dacd177d1ddd5458a5ca17f261ba8d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GAMEOVER
+      objectReference: {fileID: 0}
+    - target: {fileID: 5962703612777992913, guid: 21dacd177d1ddd5458a5ca17f261ba8d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: changeScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 5962703612777992913, guid: 21dacd177d1ddd5458a5ca17f261ba8d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GetScore, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5962703612777992913, guid: 21dacd177d1ddd5458a5ca17f261ba8d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ChangeScene, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 5962703612805751760, guid: 21dacd177d1ddd5458a5ca17f261ba8d,
         type: 3}
       propertyPath: m_Name
