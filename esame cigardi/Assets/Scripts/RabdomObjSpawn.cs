@@ -13,14 +13,14 @@ public class RabdomObjSpawn : MonoBehaviour
  
      void Start()
      {
-         SpawnObjects( objects, spawns );
+         SpawnObjects( objects, spawns, spawns );
      }
  
-     private void SpawnObjects( GameObject[] gameObjects, Transform locations, bool allowOverlap = true )
+     private void SpawnObjects( GameObject[] gameObjects, Transform locations, Transform Quaternion)
      {
  
          int gameObjectIndex = Random.Range( 0, gameObjects.Length );
-         Instantiate(gameObjects[gameObjectIndex], locations.position, Quaternion.identity);
+         Instantiate(gameObjects[gameObjectIndex], locations.position, Quaternion.rotation);
          spawnTime = Random.Range(minSpawnTime, maxSpawnTime);
      }
 
@@ -30,7 +30,7 @@ public class RabdomObjSpawn : MonoBehaviour
          Invoke("SpawnObjects", spawnTime);   
          if (spawnTime <= 0)
          {
-             SpawnObjects( objects, spawns );
+             SpawnObjects( objects, spawns, spawns );
          }  
      }
  }
