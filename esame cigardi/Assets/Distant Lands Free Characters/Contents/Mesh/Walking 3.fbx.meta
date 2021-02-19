@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f30f4245f11ec524386d1925236ef20f
+guid: 9de5b1865a14a3e4bb5e5ff7444d64d0
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
@@ -10,38 +10,38 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Boots.001
-    second: {fileID: 2100000, guid: 6b75266228de9b54cb2410e1e91ed2a4, type: 2}
+      name: Boots
+    second: {fileID: 2100000, guid: 0b5ab4b8a0e43004ba5e294fbe6cf73a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Denim
-    second: {fileID: 2100000, guid: a4b9d3f58b80099439bedb92279c3590, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Hair
+      name: Fabric 1
     second: {fileID: 2100000, guid: 3c98c150d6196ef419f666d71cf7d13f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Shirt 1
-    second: {fileID: 2100000, guid: 03f63bc20fb459248a4a28ac7768c324, type: 2}
+      name: Fabric 3
+    second: {fileID: 2100000, guid: ed6309fcf2465f8459ee0d575167c0ed, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Shirt 1.001
+      name: Hair 1
+    second: {fileID: 2100000, guid: ebe0fedcf36050348ae48d12e109f895, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Shirt 2
     second: {fileID: 2100000, guid: e3c92db89668ebb439f67832a852a3b4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Skin 1
-    second: {fileID: 2100000, guid: f8709670b974bb34b9bb5bde311063da, type: 2}
+    second: {fileID: 2100010, guid: dc1dacc99c42993499b968409533f7cb, type: 3}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Skin 1.001
-    second: {fileID: 2100000, guid: f8709670b974bb34b9bb5bde311063da, type: 2}
+      name: Skin 3
+    second: {fileID: 2100010, guid: dc1dacc99c42993499b968409533f7cb, type: 3}
   materials:
     materialImportMode: 1
     materialName: 0
