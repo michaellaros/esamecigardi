@@ -45,6 +45,10 @@ public class GetScore : MonoBehaviour
         else if (other.gameObject.CompareTag(TriggerTag))
         {
             if (action != null)action.Invoke();  
+            if (gameObject.tag == "M")
+            {
+                other.gameObject.GetComponent<Mascherina>().IndossaLaMascherina();
+            }
             GetScorePoint(); 
         }
     }
