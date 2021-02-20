@@ -124,6 +124,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &291669936 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1029190946760874228, guid: 21dacd177d1ddd5458a5ca17f261ba8d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1991816853}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &475214300
 GameObject:
   m_ObjectHideFlags: 0
@@ -458,6 +470,76 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enviroment
+      objectReference: {fileID: 0}
+    - target: {fileID: 6530387412122321095, guid: 44068dd5dc574514297e6d5405bb201d,
+        type: 3}
+      propertyPath: HpTx
+      value: 
+      objectReference: {fileID: 291669936}
+    - target: {fileID: 6530387412122321095, guid: 44068dd5dc574514297e6d5405bb201d,
+        type: 3}
+      propertyPath: ev_GameOver.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6530387412122321095, guid: 44068dd5dc574514297e6d5405bb201d,
+        type: 3}
+      propertyPath: ev_GameOver.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6530387412122321095, guid: 44068dd5dc574514297e6d5405bb201d,
+        type: 3}
+      propertyPath: ev_GameOver.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6530387412122321095, guid: 44068dd5dc574514297e6d5405bb201d,
+        type: 3}
+      propertyPath: ev_GameOver.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1745038607}
+    - target: {fileID: 6530387412122321095, guid: 44068dd5dc574514297e6d5405bb201d,
+        type: 3}
+      propertyPath: ev_GameOver.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1088174446}
+    - target: {fileID: 6530387412122321095, guid: 44068dd5dc574514297e6d5405bb201d,
+        type: 3}
+      propertyPath: ev_GameOver.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6530387412122321095, guid: 44068dd5dc574514297e6d5405bb201d,
+        type: 3}
+      propertyPath: ev_GameOver.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6530387412122321095, guid: 44068dd5dc574514297e6d5405bb201d,
+        type: 3}
+      propertyPath: ev_GameOver.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GAMEOVER
+      objectReference: {fileID: 0}
+    - target: {fileID: 6530387412122321095, guid: 44068dd5dc574514297e6d5405bb201d,
+        type: 3}
+      propertyPath: ev_GameOver.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: changeScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 6530387412122321095, guid: 44068dd5dc574514297e6d5405bb201d,
+        type: 3}
+      propertyPath: ev_GameOver.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GetScore, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6530387412122321095, guid: 44068dd5dc574514297e6d5405bb201d,
+        type: 3}
+      propertyPath: ev_GameOver.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ChangeScene, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6530387412122321095, guid: 44068dd5dc574514297e6d5405bb201d,
+        type: 3}
+      propertyPath: ev_GameOver.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6530387412122321095, guid: 44068dd5dc574514297e6d5405bb201d,
+        type: 3}
+      propertyPath: ev_GameOver.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5881099103644186145, guid: 44068dd5dc574514297e6d5405bb201d, type: 3}
