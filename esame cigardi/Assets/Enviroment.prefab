@@ -6314,8 +6314,8 @@ MonoBehaviour:
   - {fileID: 8745402664737323375, guid: 84df376fd63aae345862866b36209144, type: 3}
   - {fileID: 6286414386660278216, guid: 7926298ed64e69b408ca157625acb2f8, type: 3}
   - {fileID: 3541398057265574973, guid: 0a3e507e91133f84abd20bb941e422d2, type: 3}
-  minSpawnTime: 3
-  maxSpawnTime: 7
+  minSpawnTime: 5
+  maxSpawnTime: 10
 --- !u!114 &890246705057168354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6334,8 +6334,8 @@ MonoBehaviour:
   - {fileID: 8745402664737323375, guid: 84df376fd63aae345862866b36209144, type: 3}
   - {fileID: 6286414386660278216, guid: 7926298ed64e69b408ca157625acb2f8, type: 3}
   - {fileID: 3541398057265574973, guid: 0a3e507e91133f84abd20bb941e422d2, type: 3}
-  minSpawnTime: 3
-  maxSpawnTime: 7
+  minSpawnTime: 5
+  maxSpawnTime: 10
 --- !u!1001 &4201191892740329730
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25549,12 +25549,12 @@ PrefabInstance:
     - target: {fileID: 5270907815640463708, guid: 4542ed54eb590ca448d521a8f56a65c5,
         type: 3}
       propertyPath: maxSpawnTime
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5270907815640463708, guid: 4542ed54eb590ca448d521a8f56a65c5,
         type: 3}
       propertyPath: minSpawnTime
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5270907815640463708, guid: 4542ed54eb590ca448d521a8f56a65c5,
         type: 3}
@@ -30423,12 +30423,12 @@ PrefabInstance:
     - target: {fileID: 5270907815640463708, guid: 60e822291e5f30c49a90549152b9ca5b,
         type: 3}
       propertyPath: maxSpawnTime
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5270907815640463708, guid: 60e822291e5f30c49a90549152b9ca5b,
         type: 3}
       propertyPath: minSpawnTime
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5270907815640463708, guid: 60e822291e5f30c49a90549152b9ca5b,
         type: 3}

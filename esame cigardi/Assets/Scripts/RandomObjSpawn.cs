@@ -2,18 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RabdomObjSpawn : MonoBehaviour
+public class RandomObjSpawn : MonoBehaviour
 { 
      public Transform spawns;
      [SerializeField] GameObject[] objects;
      public float minSpawnTime;
      public float maxSpawnTime;
      private float spawnTime;
+     private float difficulty;
+     private float minDifficulty;
+     private float maxDifficulty;
      private int spawnIndex;
  
      void Start()
      {
-         SpawnObjects( objects, spawns, spawns );
+         difficulty = 60f;
+         spawnTime = Random.Range(minSpawnTime, maxSpawnTime);
+         minDifficulty = minSpawnTime / 2f;
+         maxDifficulty = maxSpawnTime /2f;
      }
  
      private void SpawnObjects( GameObject[] gameObjects, Transform locations, Transform Quaternion)
@@ -32,5 +38,23 @@ public class RabdomObjSpawn : MonoBehaviour
          {
              SpawnObjects( objects, spawns, spawns );
          }  
+         IncreaseDifficulty();
+     }
+
+     void IncreaseDifficulty()
+     {
+         difficulty = difficulty - Time.deltaTime;
+         if(difficulty <= 0)
+         {
+             if(minSpawnTime > minDifficulty)
+             {
+                 minSpawnTime = minSpawnTime - 0.1f;
+             }
+             if(maxSpawnTime > maxDifficulty)
+             {
+                 maxSpawnTime = maxSpawnTime - 0.1f;
+             }
+             difficulty = 60f;
+         }
      }
  }
