@@ -7,6 +7,8 @@ public class LeaderBoardVisualizer : MonoBehaviour
 {
     public RectTransform ContentBoxTransform;
     public RectTransform ScoreEntryPrefab;
+    private float timer;
+    private bool doOnce;
 
     public List<GameObject> currentlyInstantiatedTexts = new List<GameObject>();
 
@@ -14,12 +16,19 @@ public class LeaderBoardVisualizer : MonoBehaviour
     void Start()
     {
         UpdateScoreVisualization();
+        timer = 1f;
+        doOnce = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-      
+      timer = timer - Time.deltaTime;
+      if (timer <= 0 && doOnce == false)
+      {
+          UpdateScoreVisualization();
+          doOnce = true;
+      }
     }
 
     public void UpdateScoreVisualization()
