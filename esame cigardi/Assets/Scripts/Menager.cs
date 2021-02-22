@@ -20,11 +20,12 @@ public class Menager : MonoBehaviour
         {
             Destroy (gameObject);
         }
+        PlayerName = PlayerPrefs.GetString("PlayerName");
       }
 
     void Start()
     {
-        PlayerName = PlayerPrefs.GetString("PlayerName");
+        
     }
 
     void Update()

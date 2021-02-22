@@ -15,7 +15,7 @@ public class LeaderBoardVisualizer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        UpdateScoreVisualization();
+        //UpdateScoreVisualization();
         timer = 1f;
         doOnce = false;
     }
