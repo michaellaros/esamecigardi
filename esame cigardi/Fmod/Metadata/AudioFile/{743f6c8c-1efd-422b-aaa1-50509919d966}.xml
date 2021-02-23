@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{743f6c8c-1efd-422b-aaa1-50509919d966}">
+		<property name="assetPath">
+			<value>Technology of Silence - Red Sniper.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>332.04244897959182</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{1b0d6ad1-9bfe-49a0-9bb7-fb44703ef64a}</destination>
+		</relationship>
+	</object>
+</objects>
