@@ -16,11 +16,13 @@ TagManager:
   - ManiSporche
   - Febbre
   - Passante
+  - PlayerCamera
+  - ARPlanes
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - post process
   - Water
   - UI
   - 
