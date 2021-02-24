@@ -34,11 +34,11 @@ public class GetScore : MonoBehaviour
         {
             if (other.gameObject.CompareTag("Febbre"))
             {
-               TemperatureTx.text = "c`" + other.gameObject.GetComponent<Fever>().temperature ; 
+               TemperatureTx.text = other.gameObject.GetComponent<Fever>().temperature + "°C"; 
             }
             else if(other.gameObject.CompareTag("Passante"))
             {
-                TemperatureTx.text = "c`" + other.gameObject.GetComponent<Fever>().temperature ; 
+                TemperatureTx.text = other.gameObject.GetComponent<Fever>().temperature + "°C"; 
             }
             if (eventMisuration != null)eventMisuration.Invoke();  
         }
