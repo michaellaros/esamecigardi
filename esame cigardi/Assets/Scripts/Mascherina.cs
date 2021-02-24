@@ -5,6 +5,7 @@ using UnityEngine;
 public class Mascherina : MonoBehaviour
 {
     public GameObject m_Passante;
+    public GameObject NuvolaMascherina;
 
     // Start is called before the first frame update
     void Start()
@@ -22,5 +23,6 @@ public class Mascherina : MonoBehaviour
     {
         m_Passante.transform.gameObject.tag = "Passante";
         transform.gameObject.tag = "Passante";
+        NuvolaMascherina.SetActive(false);
     }
 }
