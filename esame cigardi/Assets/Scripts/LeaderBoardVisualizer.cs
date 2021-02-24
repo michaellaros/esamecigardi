@@ -7,28 +7,19 @@ public class LeaderBoardVisualizer : MonoBehaviour
 {
     public RectTransform ContentBoxTransform;
     public RectTransform ScoreEntryPrefab;
-    private float timer;
-    private bool doOnce;
 
     public List<GameObject> currentlyInstantiatedTexts = new List<GameObject>();
 
     // Start is called before the first frame update
     void Start()
     {
-        //UpdateScoreVisualization();
-        timer = 1f;
-        doOnce = false;
+        UpdateScoreVisualization();
     }
 
     // Update is called once per frame
     void Update()
     {
-      timer = timer - Time.deltaTime;
-      if (timer <= 0 && doOnce == false)
-      {
-          UpdateScoreVisualization();
-          doOnce = true;
-      }
+
     }
 
     public void UpdateScoreVisualization()
