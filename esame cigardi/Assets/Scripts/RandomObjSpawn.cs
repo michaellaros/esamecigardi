@@ -6,8 +6,8 @@ public class RandomObjSpawn : MonoBehaviour
 { 
      public Transform spawns;
      [SerializeField] GameObject[] objects;
-     public float minSpawnTime;
-     public float maxSpawnTime;
+     private float minSpawnTime = 10f;
+     private float maxSpawnTime = 20f;
      private float spawnTime;
      private float difficulty;
      private float minDifficulty;
